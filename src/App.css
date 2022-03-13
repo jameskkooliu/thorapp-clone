@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar-brand {
+  color: #3c39ec !important;
+  font-size: 19px !important;
+}
+
+.container-fluid {
+  margin-left: 280px !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .container-fluid {
+    margin-left: 10px !important;
+  }
+}

@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React, {Fragment} from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Online from './pages/online';
+import NotFound from './pages/NotFound';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Fragment>
+          <Header />
+          <Routes>
+            <Route path="*" element={<NotFound />} />
+            <Route path="/" element={<Online />} />
+          </Routes>
+          <Footer />
+        </Fragment>
+      </Router>
     </div>
   );
 }
