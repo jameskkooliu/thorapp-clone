@@ -4,8 +4,8 @@ import logo from '../../assets/images/thor_apps_png_1.webp';
 
 function Header() {
   return (
-    <div className="m-logo">
-      <nav className="navbar navbar-expand-lg navbar-light">
+    <div className="m-logo fixed-navbar-top">
+      <nav className="navbar navbar-expand-lg navbar-light navbar-default">
         <div className="container-fluid my-3">
           <Link to='/' className="navbar-brand text-center">
             <img src={logo} alt='logo' />
