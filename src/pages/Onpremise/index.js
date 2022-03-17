@@ -4,7 +4,6 @@ import pic1 from '../../assets/images/Computer with Graph.webp';
 import pic2 from '../../assets/images/Business Meeting.webp';
 import pic3 from '../../assets/images/helloquence-5fNmWej4tAA-unsplash.webp';
 import Quote from "../../components/Quote";
-import {Link} from 'react-router-dom'
 
 function Onpremise() {
     const quoteRef = useRef(null)
@@ -12,10 +11,6 @@ function Onpremise() {
     const scrollToQuote = () => {
         quoteRef.current.scrollIntoView({ behavior: "smooth" })
     }
-
-    
-
-
     return(
         <div className='main'>
         <div className='online-container'>
@@ -31,7 +26,7 @@ function Onpremise() {
                 <div className='col-md-4'>
                     <div className='container'>
                         <div className='image-container d-flex justify-content-center'>
-                            <Link to='/bi-service-ssrs-reports-sharepoint'><button className='btn btn-primary btn-snpashort'>PROJECT SNAPSHOTS</button></Link>
+                        <button className='btn btn-primary btn-snpashort'>PROJECT INTEGRATION ENGINE</button>
                             <img src={pic1} alt='not found' className='mb-4 premise-showcase-image' />
                         </div>
                         <div className='text-center'>
@@ -46,7 +41,7 @@ function Onpremise() {
                 <div className='col-md-4'>
                     <div className='container'>
                         <div className='image-container d-flex justify-content-center'>
-                        <Link to='/bi-service-ssrs-reports-sharepoint'><button className='btn btn-primary btn-snpashort'>PROJECT SNAPSHOTS</button></Link>
+                        <button className='btn btn-primary btn-snpashort'>PROJECT SNAPSHOTS</button>
                             <img src={pic2} alt='not found' className='mb-4 premise-showcase-image' />
                         </div>
                         <div className='text-center'>
@@ -61,7 +56,7 @@ function Onpremise() {
                 <div className='col-md-4'>
                     <div className='container'>
                         <div className='image-container d-flex justify-content-center'>
-                        <Link to='/bi-service-ssrs-reports-sharepoint'><button className='btn btn-primary btn-snpashort'>PROJECT SNAPSHOTS</button></Link>
+                        <button className='btn btn-primary btn-snpashort'>REFLEX REPORTING</button>
                             <img src={pic3} alt='not found' className='mb-4 premise-showcase-image' />
                         </div>
                         <div className='text-center'>

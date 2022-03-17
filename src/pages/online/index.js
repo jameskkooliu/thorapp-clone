@@ -61,34 +61,28 @@ function Online() {
                     </div>
                     <div className="col-md-3 showcase-item">
                         <div className='image-container d-flex justify-content-center'>
-                            <Link to='/bi-service-ssrs-reports-sharepoint'><button className='btn btn-showcase'>BI SERVICE</button></Link>
+                            <Link to='/list-sync-sql-sharepoint-online'><button className='btn btn-showcase'>LIST SYNC</button></Link>
                             <img src={showcase2} alt='showcase2' className='mb-4 showcase' />
                         </div>
                         <div className='text-center'>
-                            <span className='showcase-title'>Real-time collaboration for BI reports in SharePoint Online</span>
+                            <span className='showcase-title'>Replicate your list items to SQL in real-time in SharePoint Online</span>
                         </div>
                         <div>
                             <p className='text-center showcase-content'>
-                            Get immediate access to your data from different sources
-                            using SQL Server Reporting in a format that works for you.
-                            Create, export and schedule stunning dashboards and get
-                            actionable insights at your fingertips. </p>
+                            Gain immediate access to all of your SharePoint lists in one place. With data collated and stored in SQL, you’ll be running reports in a fraction of the time. </p>
                         </div>
                     </div>
                     <div className="col-md-3 showcase-item">
                         <div className='image-container d-flex justify-content-center'>
-                            <Link to='/bi-service-ssrs-reports-sharepoint'><button className='btn btn-showcase'>BI SERVICE</button></Link>
+                            <Link to='/project-sync-project-online'><button className='btn btn-showcase'>PROJECT SYNC</button></Link>
                             <img src={showcase3} alt='showcase3' className='mb-4 showcase' />
                         </div>
                         <div className='text-center'>
-                            <span className='showcase-title'>Real-time collaboration for BI reports in SharePoint Online</span>
+                            <span className='showcase-title'>Access all your entities across Project Online</span>
                         </div>
                         <div>
                             <p className='text-center showcase-content'>
-                            Get immediate access to your data from different sources
-                            using SQL Server Reporting in a format that works for you.
-                            Create, export and schedule stunning dashboards and get
-                            actionable insights at your fingertips. </p>
+                            Compile a complete picture of your project replicating project entities into SQL database in just a fraction of the time. Be ready for your next meeting, armed with immediate access to accurate data. </p>
                         </div>
                     </div>
                 </div>
@@ -132,19 +126,19 @@ function Online() {
                             <img src={sharedPoint} alt="not found" className='itro-svg' />
                             <div className='intro-title'><p>SharePoint<br/>Expert</p></div>
                             <div className='intro-description'><p>More than 200,000 organizations and 190 million people are using SharePoint to share and manage content, knowledge, and applications to empower teamwork, quickly find information, and seamlessly collaborate across the organization.</p></div>
-                            <button className='btn btn-primary'>Learn More</button>
+                            <Link to='/about'><button className='btn btn-primary'>Learn More</button></Link>
                         </div>
                         <div className='intro-item col-md-4 text-center'>
                             <img src={microsoft} alt="not found" className='itro-svg' />
                             <div className='intro-title'><p>Microsoft<br/>Certified</p></div>
                             <div className='intro-description'><p>By being a Certified Microsoft Partner we have access to the latest training, resources and dedicated support. This means we are always up-to-date on the latest features, releases and early product information to provide our clients a robust, seamless SharePoint experience.</p></div>
-                            <button className='btn btn-primary'>Learn More</button>
+                            <Link to='/about'><button className='btn btn-primary'>Learn More</button></Link>
                         </div>
                         <div className='intro-item col-md-4 text-center'>
                             <img src={message} alt="not found" className='itro-svg' />
                             <div className='intro-title'><p>Reliable<br/>Partners</p></div>
                             <div className='intro-description'><p>We are proud to partner with BGI Solutions, an Australian company that masters our tools to deliver best-in-class service to our clients worldwide. Their agile team of IT specialists is ready to assist you with the configuration and implementation of our apps.</p></div>
-                            <button className='btn btn-primary'>Learn More</button>
+                            <a href='https://www.bgisolutions.com.au/' className='btn btn-primary'>Learn More</a>
                         </div>
                     </div>
                     
