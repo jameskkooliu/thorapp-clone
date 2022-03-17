@@ -1,7 +1,9 @@
 import React from "react";
 
 function NotFound() {
-    return <></>
+    return(
+        <></>
+    );
 }
 
 export default NotFound;

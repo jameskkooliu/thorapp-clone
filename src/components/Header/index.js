@@ -1,68 +1,31 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React from "react";
+import {Link} from 'react-router-dom';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import logo from '../../assets/images/thor_apps_png_1.webp';
 
 function Header() {
-  return (
-    <div className="m-logo fixed-navbar-top">
-      <nav className="navbar navbar-expand-lg navbar-light navbar-default">
-        <div className="container-fluid my-3">
-          <Link to='/' className="navbar-brand text-center">
-            <img src={logo} alt='logo' />
-          </Link>
-          <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarCollapse">
-            <div className="navbar-nav ms-auto">
-              <ul className="navbar-nav">
-                <li className="nav-item nav-link mr-4 m-b-3">
-                  <Link to='/' className="navbar-brand text-center">
-                    Online
-                  </Link>
-                </li>
-                <li className="nav-item nav-link mr-4 m-b-3">
-                  <Link to='/on-premise' className="navbar-brand text-center">
-                    On-Premise
-                  </Link>
-                </li>
-                <li className="nav-item nav-link mr-4 m-b-3">
-                  <Link to='/pricing' className="navbar-brand text-center">
-                    Pricing
-                  </Link>
-                </li>
-                <li className="nav-item nav-link mr-4 m-b-3">
-                  <Link to='/case-studies' className="navbar-brand text-center">
-                    Case Studies
-                  </Link>
-                </li>
-                <li className="nav-item nav-link mr-4 m-b-3">
-                  <Link to='/support' className="navbar-brand text-center">
-                    Support
-                  </Link>
-                </li>
-                <li className="nav-item nav-link mr-4 m-b-3">
-                  <Link to='/faq' className="navbar-brand text-center">
-                    FAQ
-                  </Link>
-                </li>
-                <li className="nav-item nav-link mr-4 m-b-3">
-                  <Link to='/supportpolicy' className="navbar-brand text-center nav-text">
-                    Support Policy
-                  </Link>
-                </li>
-                <li className="nav-item nav-link mr-4 m-b-3">
-                  <Link to='/' className="navbar-brand text-center">
-                    Contact Us
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  );
+    return(
+        <Navbar bg="light" expand="lg" fixed="top">
+            <Container fluid>
+                <Navbar.Brand className="logo">
+                    <Link to='/'><img src={logo} alt="logo" /></Link>
+                </Navbar.Brand>
+                <Navbar.Toggle />
+                <Navbar.Collapse id="navbarScroll" className="justify-content-end" style={{ width: "100%" }}>
+                    <Nav className="d-flex">
+                        <Nav className="navbar mx-3"><Link to='/'>Online</Link></Nav>
+                        <Nav className="navbar mx-3"><Link to='/on-premise'>On-Premise</Link></Nav>
+                        <Nav className="navbar mx-3"><Link to='/pricing'>Pricing</Link></Nav>
+                        <Nav className="navbar mx-3"><Link to='/case-studies'>Case Studies</Link></Nav>
+                        <Nav className="navbar mx-3"><Link to='/on-premise'>Support</Link></Nav>
+                        <Nav className="navbar mx-3"><Link to='/on-premise'>FAQ</Link></Nav>
+                        <Nav className="navbar mx-3"><Link to='/on-premise'>Support Policy</Link></Nav>
+                        <Nav className="navbar mx-3"><Link to='/on-premise'>Contact Us</Link></Nav>
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    )
 }
 
 export default Header;

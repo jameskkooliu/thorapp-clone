@@ -8,6 +8,8 @@ import NotFound from './pages/NotFound';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome';
 import './App.css';
+import Pricing from './pages/Pricing';
+import CaseStudies from './pages/Case-Studies';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
           <Routes>
             <Route path="*" element={<NotFound />} />
             <Route path="/" element={<Online />} />
-            <Route path="/on-premise" element={<OnPremise/>} />
+            <Route path="/on-premise" element={<OnPremise />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/case-studies" element={<CaseStudies />} />
           </Routes>
           <Footer />
         </Fragment>
