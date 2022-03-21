@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import header from '../../assets/images/82247c59afc5287da5d4200cc85bef0f.webp';
 import pic1 from '../../assets/images/Computer with Graph.webp';
 import pic2 from '../../assets/images/Business Meeting.webp';
@@ -6,6 +6,11 @@ import pic3 from '../../assets/images/helloquence-5fNmWej4tAA-unsplash.webp';
 import Quote from "../../components/Quote";
 
 function Onpremise() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     const quoteRef = useRef(null)
 
     const scrollToQuote = () => {

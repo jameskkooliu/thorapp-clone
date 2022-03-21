@@ -10,6 +10,7 @@ import '@fortawesome/fontawesome';
 import './App.css';
 import Pricing from './pages/Pricing';
 import CaseStudies from './pages/Case-Studies';
+import Faq from './pages/Faq';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/on-premise" element={<OnPremise />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/case-studies" element={<CaseStudies />} />
+            <Route path="/faq" element={<Faq />} />
           </Routes>
           <Footer />
         </Fragment>

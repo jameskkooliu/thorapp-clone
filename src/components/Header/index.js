@@ -18,8 +18,8 @@ function Header() {
                         <Nav className="navbar mx-3"><Link to='/pricing'>Pricing</Link></Nav>
                         <Nav className="navbar mx-3"><Link to='/case-studies'>Case Studies</Link></Nav>
                         <Nav className="navbar mx-3"><Link to='/on-premise'>Support</Link></Nav>
-                        <Nav className="navbar mx-3"><Link to='/on-premise'>FAQ</Link></Nav>
-                        <Nav className="navbar mx-3"><Link to='/on-premise'>Support Policy</Link></Nav>
+                        <Nav className="navbar mx-3"><Link to='/faq'>FAQ</Link></Nav>
+                        <Nav className="navbar mx-3"><Link to='/supportpolicy'>Support Policy</Link></Nav>
                         <Nav className="navbar mx-3"><Link to='/on-premise'>Contact Us</Link></Nav>
                     </Nav>
                 </Navbar.Collapse>

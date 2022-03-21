@@ -1,12 +1,17 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import education from '../../assets/images/c1a65d_57394b4348d54e48926ef0dfde67fcca_mv2_d_4000_2667_s_4_2.webp'
 import health from '../../assets/images/c1a65d_4ef9eb494c3148839f195226711833bc_mv2_d_2500_1478_s_2.webp';
 import utilities from '../../assets/images/c1a65d_6f76789da61c46a68bbc6b0d311c869c_mv2_d_4000_3318_s_4_2.webp';
 import government from '../../assets/images/c1a65d_6731f3d04efe41df9a5f3fe4a4b46b93_mv2_d_3500_2333_s_2.webp';
 import finance from '../../assets/images/c1a65d_c013db23cd0c41f19f190a2fc21b6dac_mv2_d_2500_1522_s_2.webp';
 import mining from '../../assets/images/c1a65d_7082b6b4cc2f43c19e0ed5031cf435f5_mv2_d_2667_4000_s_4_2.webp';
+import { Link } from 'react-router-dom';
 
 function CaseStudies() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
 
 
     const educationRef = useRef(null);
@@ -70,8 +75,8 @@ function CaseStudies() {
                         <div className="p-0">
                             <h1 className="eductaion-title">Education</h1>
                             <div className="d-flex">
-                                <button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button>
-                                <button className="cases-btn btn">LIST SYNC</button>
+                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button></Link>
+                                <Link to="/list-sync-sql-sharepoint-online"><button className="cases-btn btn">LIST SYNC</button></Link>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">CHALLENGE</div>
@@ -97,7 +102,7 @@ function CaseStudies() {
                         <div className="p-0">
                             <h1 className="eductaion-title">Health</h1>
                             <div className="d-flex">
-                                <button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button>
+                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button></Link>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">CHALLENGE</div>
@@ -128,8 +133,8 @@ function CaseStudies() {
                         <div className="p-0">
                             <h1 className="eductaion-title">Utilities</h1>
                             <div className="d-flex">
-                                <button className="cases-btn btn" style={{ marginLeft: '0px' }}>PROJECT SYNC</button>
-                                <button className="cases-btn btn">LIST SYNC</button>
+                                <Link to='/project-sync-project-online'><button className="cases-btn btn" style={{ marginLeft: '0px' }}>PROJECT SYNC</button></Link>
+                                <Link to='/list-sync-sql-sharepoint-online'><button className="cases-btn btn">LIST SYNC</button></Link>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">CHALLENGE</div>
@@ -154,7 +159,7 @@ function CaseStudies() {
                         <div className="p-0">
                             <h1 className="eductaion-title">Government</h1>
                             <div className="d-flex">
-                                <button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button>
+                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button></Link>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">CHALLENGE</div>
@@ -185,8 +190,8 @@ function CaseStudies() {
                         <div className="p-0">
                             <h1 className="eductaion-title">Finance</h1>
                             <div className="d-flex">
-                                <button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button>
-                                <button className="cases-btn btn">LIST SYNC</button>
+                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button></Link>
+                                <Link to="/list-sync-sql-sharepoint-online"><button className="cases-btn btn">LIST SYNC</button></Link>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">CHALLENGE</div>
@@ -211,7 +216,7 @@ function CaseStudies() {
                         <div className="p-0">
                             <h1 className="eductaion-title">Mining</h1>
                             <div className="d-flex">
-                                <button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button>
+                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button></Link>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">CHALLENGE</div>

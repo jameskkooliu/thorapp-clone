@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import mainBack from '../../assets/images/82247c59afc5287da5d4200cc85bef0f.webp';
 import card from '../../assets/svgs/card.svg'
@@ -8,8 +8,18 @@ import free from '../../assets/svgs/free.svg'
 import environment from '../../assets/svgs/environment.svg'
 import handshake from '../../assets/svgs/handshake.svg'
 import tableMeeting from '../../assets/images/c1a65d_c16c0544d5b1428b9d902bb575ceff04_mv2_d_4000_2667_s_4_2 (1).webp'
+import Modal from '../DownloadModal'
 
 function Pricing() {
+    const [isModalOpen, setModalIsOpen] = useState(false);
+
+    const showDownloadModal = () => {
+        setModalIsOpen(!isModalOpen);
+    }
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
 
     const navigate = useNavigate();
 
@@ -19,6 +29,7 @@ function Pricing() {
 
     return (
         <div className="main">
+            {isModalOpen && <Modal onRequestClose={showDownloadModal} />}
             <div className='online-container'>
                 <img src={mainBack} alt="mainBack" className='main-back' />
                 <div className='centered'>
@@ -85,7 +96,7 @@ function Pricing() {
                         <div className="p-4">Best plan to test your data consumption</div>
                         <div className="check-item">✓</div>
                         <div className="check-item">✓</div>
-                        <button className="btn btn-success">Get Started</button>
+                        <button className="btn btn-success" onClick={showDownloadModal}>Get Started</button>
                         <div className="check-item">✓</div>
                     </div>
                     <div className="col-md-2 col-xs-12 text-center">
@@ -161,11 +172,11 @@ function Pricing() {
                 </div>
             </div>
             <div className="container mt-5 mb-5">
-                <div class="row">
-                    <div class="col-lg-7 p-0">
+                <div className="row">
+                    <div className="col-lg-7 p-0">
                         <img src={tableMeeting} alt='meeting' className="case-image" />
                     </div>
-                    <div class="col-lg-5 table-right">
+                    <div className="col-lg-5 table-right">
                         <div className="meeting-text"><h3>FOR <span className="on-premise-apps">ON-PREMISE APPS</span>, PLEASE CONTACT US.</h3></div>
                         <button className="btn quote" onClick={redirectToRequestQuote}>Request Quote</button>
                     </div>

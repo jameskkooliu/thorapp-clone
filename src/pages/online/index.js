@@ -26,7 +26,7 @@ function Online() {
     }
 
     useEffect(() => {
-        scrollToShowcase()
+        scrollToShowcase();
     }, []);
 
     return(
@@ -141,7 +141,6 @@ function Online() {
                             <a href='https://www.bgisolutions.com.au/' className='btn btn-primary'>Learn More</a>
                         </div>
                     </div>
-                    
                 </div>
             </div>
             <div className="contact-us-container">
@@ -150,5 +149,4 @@ function Online() {
         </div>
     )
 }
-
 export default Online;
