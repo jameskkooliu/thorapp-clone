@@ -5,12 +5,14 @@ import Footer from './components/Footer';
 import Online from './pages/Online';
 import OnPremise from './pages/Onpremise';
 import NotFound from './pages/NotFound';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '@fortawesome/fontawesome';
-import './App.css';
+import ContactPage from './pages/Contact';
 import Pricing from './pages/Pricing';
 import CaseStudies from './pages/Case-Studies';
 import Faq from './pages/Faq';
+import Supportpolicy from './pages/Supportpolicy';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome';
+import './App.css';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/faq" element={<Faq />} />
+            <Route path="/supportpolicy" element={<Supportpolicy />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
           <Footer />
         </Fragment>

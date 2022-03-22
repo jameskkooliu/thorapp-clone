@@ -8,14 +8,58 @@ import free from '../../assets/svgs/free.svg'
 import environment from '../../assets/svgs/environment.svg'
 import handshake from '../../assets/svgs/handshake.svg'
 import tableMeeting from '../../assets/images/c1a65d_c16c0544d5b1428b9d902bb575ceff04_mv2_d_4000_2667_s_4_2 (1).webp'
-import Modal from '../DownloadModal'
+import ContactModal from '../../components/ContactModal'
+import DownloadModal from '../../components/DownloadModal'
+import PricingModal from '../../components/PricingModal'
+import Slide from '@mui/material/Slide';
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+	return <Slide direction="left" ref={ref} {...props} />;
+});
 
 function Pricing() {
-    const [isModalOpen, setModalIsOpen] = useState(false);
+    const [scroll, setScroll] = React.useState('paper');
 
-    const showDownloadModal = () => {
-        setModalIsOpen(!isModalOpen);
-    }
+
+    const [open, setOpen] = React.useState(false);
+    const [downloadOpen, setDownloadOpen] = React.useState(false);
+    const [pricingOpen, setPricingOpen] = React.useState(false);
+
+    const handleClickOpen = (scrollType) => {
+        setOpen(true);
+        setScroll(scrollType);
+    };
+
+    const handleClickDownloadOpen = (scrollType) => {
+        setDownloadOpen(true);
+        setScroll(scrollType);
+    };
+
+    const handleClickPricingOpen = () => {
+        setPricingOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+    const handleDownloadClose = () => {
+        setDownloadOpen(false);
+    };
+
+    const handlePricingClose = () => {
+        setPricingOpen(false);
+    };
+
+    // const handleDownloadClose = () => {
+    //     setDownloadOpen(false);
+    // };
+
+    // const [isModalOpen, setModalIsOpen] = useState(false);
+
+    // const showDownloadModal = () => {
+    //     setModalIsOpen(!isModalOpen);
+    // }
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -27,9 +71,10 @@ function Pricing() {
         navigate('/on-premise');
     }
 
+
+
     return (
         <div className="main">
-            {isModalOpen && <Modal onRequestClose={showDownloadModal} />}
             <div className='online-container'>
                 <img src={mainBack} alt="mainBack" className='main-back' />
                 <div className='centered'>
@@ -45,7 +90,7 @@ function Pricing() {
                 <div className="description">
                     <h4>Create your ThorApps account today and get a $50-plan for free, valid for 30 days. Try out a single product, or trial the full suite of powerful apps to boost your data experience in SharePoint Online.</h4>
                 </div>
-                <button className="btn calc-price">LEARN HOW WE CALCULATE THE PRICE</button>
+                <button className="btn calc-price" onClick={handleClickPricingOpen}>LEARN HOW WE CALCULATE THE PRICE</button>
             </div>
             <div className="pricing-cards">
             <div className="container">
@@ -88,15 +133,15 @@ function Pricing() {
                         <span className="element text-center">Valid for 30 days</span>
                         <div className="element get-free">GET $50 FOR FREE</div>
                         <div className="element text-bold">Unlimited Users</div>
-                        <button className="btn btn-success">Get Started</button>
+                        <button className="btn btn-success" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="p-4">Best plan to test your data consumption</div>
                         <div className="check-item">✓</div>
                         <div className="check-item">✓</div>
-                        <button className="btn btn-success">Get Started</button>
+                        <button className="btn btn-success" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="p-4">Best plan to test your data consumption</div>
                         <div className="check-item">✓</div>
                         <div className="check-item">✓</div>
-                        <button className="btn btn-success" onClick={showDownloadModal}>Get Started</button>
+                        <button className="btn btn-success" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="check-item">✓</div>
                     </div>
                     <div className="col-md-2 col-xs-12 text-center">
@@ -105,15 +150,15 @@ function Pricing() {
                         <span className="element">Valid for 30 days</span>
                         <div className="element get-price ">GET $50 FOR FREE</div>
                         <div className="element text-bold">Unlimited Users</div>
-                        <button className="btn btn-start">Get Started</button>
+                        <button className="btn btn-start" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="p-4">Best plan to execute approx.<br/> <b>5,200 reports</b></div>
                         <div className="check-item">✓</div>
                         <div className="check-item">✓</div>
-                        <button className="btn btn-start">Get Started</button>
+                        <button className="btn btn-start" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="p-4">Best plan to sync approx.<br/> <b>+177,000 items</b></div>
                         <div className="check-item">✓</div>
                         <div className="check-item">✓</div>
-                        <button className="btn btn-start">Get Started</button>
+                        <button className="btn btn-start" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="check-item">✓</div>
                     </div>
                     <div className="col-md-2 col-xs-12 text-center">
@@ -122,15 +167,15 @@ function Pricing() {
                         <span className="element">Valid for 30 days</span>
                         <div className="element get-price">GET $50 FOR FREE</div>
                         <div className="element text-bold">Unlimited Users</div>
-                        <button className="btn btn-start">Get Started</button>
+                        <button className="btn btn-start" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="p-4">Best plan to sync approx.<br/> <b>37,000 items</b></div>
                         <div className="check-item">✓</div>
                         <div className="check-item">✓</div>
-                        <button className="btn btn-start">Get Started</button>
+                        <button className="btn btn-start" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="p-4">Best plan to sync approx.<br/> <b>37,000 items</b></div>
                         <div className="check-item">✓</div>
                         <div className="check-item">✓</div>
-                        <button className="btn btn-start">Get Started</button>
+                        <button className="btn btn-start" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="check-item">✓</div>
                     </div>
                     <div className="col-md-2 col-xs-12 text-center">
@@ -139,15 +184,15 @@ function Pricing() {
                         <span className="element">Valid for 30 days</span>
                         <div className="element get-price">GET $50 FOR FREE</div>
                         <div className="element text-bold">Unlimited Users</div>
-                        <button className="btn btn-start">Get Started</button>
+                        <button className="btn btn-start" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="p-4">Best plan to execute approx.<br/><b> 82,000 items</b></div>
                         <div className="check-item">✓</div>
                         <div className="check-item">✓</div>
-                        <button className="btn btn-start">Get Started</button>
+                        <button className="btn btn-start" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="p-4">Best plan to sync approx.<br/> <b>82,000 items</b></div>
                         <div className="check-item">✓</div>
                         <div className="check-item">✓</div>
-                        <button className="btn btn-start">Get Started</button>
+                        <button className="btn btn-start" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="check-item">✓</div>
                     </div>
                     <div className="col-md-2 col-xs-12 text-center">
@@ -158,15 +203,15 @@ function Pricing() {
                         <span className="element">Valid for 30 days</span>
                         <div className="element get-price">GET $50 FOR FREE</div>
                         <div className="element text-bold">Unlimited Users</div>
-                        <button className="btn btn-contact">Contatc Us</button>
+                        <button className="btn btn-contact" onClick={handleClickOpen}>Contatc Us</button>
                         <div className="p-4">Best plan to execute approx.<br/> <b>+177,000 items</b></div>
                         <div className="check-item">✓</div>
                         <div className="check-item">✓</div>
-                        <button className="btn btn-contact">Contatc Us</button>
+                        <button className="btn btn-contact" onClick={handleClickOpen}>Contatc Us</button>
                         <div className="p-4">Best plan to sync approx.<br/> <b>+177,000 items</b></div>
                         <div className="check-item">✓</div>
                         <div className="check-item">✓</div>
-                        <button className="btn btn-contact">Contatc Us</button>
+                        <button className="btn btn-contact" onClick={handleClickOpen}>Contatc Us</button>
                         <div className="check-item">✓</div>
                         </div>
                 </div>
@@ -182,6 +227,9 @@ function Pricing() {
                     </div>
                 </div>
             </div>
+            <ContactModal open={open} onClose={handleClose} ransitionComponent={Transition} />
+            <DownloadModal open={downloadOpen} onClose={handleDownloadClose} ransitionComponent={Transition} />
+            <PricingModal open={pricingOpen} onClose={handlePricingClose} />
         </div>
     )
 }

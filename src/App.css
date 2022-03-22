@@ -625,9 +625,215 @@ input {
 .faq-sb2-title {
   font-size: 26px;
   color: #303030;
+  margin-top: 25px;
+  font-weight: bold;
 }
 
 .faq-description {
   font-size: 20px;
   color: #303030;
+}
+
+.middle-faq-border {
+  border: 1px solid rgb(114, 111, 111);
+  margin-top: 40px;
+  width: 100%;
+  /* width: 1050px; */
+}
+
+.special-title {
+  font-size: 28px;
+  color: #5221d8;
+}
+
+.sup-policy-top {
+  font-size: 30px;
+}
+.sp-top-title {
+  font-size: 23px;
+  font-weight: 200;
+}
+.sp-title {
+  margin-top: 35px;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.sp-desc {
+  font-size: 23px;
+}
+
+.middle-sp-border {
+  border: 1px solid rgb(68, 67, 67);
+  margin-top: 40px;
+  width: 60%;
+}
+.microsoft-partner {
+  font-size: 50px;
+}
+
+.contact-us-btn {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #7d59e7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-modal {
+  width: 40% !important;
+}
+
+@media screen and (max-width: 968px) {
+  .contact-modal {
+    width: 85% !important;
+  }  
+  .MuiDialog-paperFullScreen {
+    left: 10% !important;
+  }
+  .contact-modal-title {
+    font-size: 40px !important;
+  }  
+}
+
+.contact-modal-title {
+  font-weight: bold;
+  color: #FFF;
+  font-size: 70px;
+}
+
+.contact-modal-content {
+  font-size: 20px;
+  color: #FFF;
+  margin-left: 30px;
+}
+
+.contact-input {
+  border-radius: 0px;
+  border: solid 5px #FFF !important;
+  background-color: rgb(98, 1, 255);
+  width: 48%;
+  height: 50px;
+  /* margin-right: 20px; */
+  margin-top: 30px;
+  color: #fff;
+}
+
+.contact-input:focus {
+  background-color: rgb(98, 1, 255);
+  color: #fff;
+}
+
+.contact-input:focus {
+  border-radius: 0px;
+  border: solid 5px #FFF !important;
+}
+
+input[type="email"] {
+  width: 100%;
+}
+
+.contact-message {
+  height: 200px;
+  width: 100%;
+}
+
+.submit-btn {
+  background-color: #FFF;
+  color: rgb(98, 1, 255);
+  font-weight: 600;
+  margin-top: 20px;
+  height: 80px;
+  font-size: 20px;
+  width: 48%;
+}
+.submit-btn:hover {
+  background-color: rgb(226, 87, 134);
+  color: #fff;
+}
+
+.download-modal-title {
+  margin-top: 120px;
+  text-align: center;
+  color: #FFF;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.download-modal-content{
+  font-size: 25px;
+  text-align: center;
+  color: #FFF;
+}
+
+.download-modal-list-container{
+  margin: 0 100px
+}
+
+@media screen and (max-width: 1240px) {
+  .download-modal-list-container{
+    margin: 0 20px;
+  }
+}
+.download-modal-list{
+  font-size: 25px;
+  color: #FFF;
+}
+.download-btn {
+  background-color: rgb(98, 1, 255);
+  color: #fff;
+  margin-top: 50px;
+  height: 45px;
+  font-size: 14px;
+  border: #fff 3px solid;
+  width: 150px;
+  font-weight: 600;
+}
+
+.download-btn:hover {
+  background-color: #fff;
+  color: rgb(98, 1, 255);
+}
+
+.download-btn-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-links {
+  color: #d221d8;
+}
+
+.pricing-modal {
+  background: rgb(98, 1, 255);
+}
+
+.pricing-title {
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pricing-desc {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.pricing-sb-title{
+  font-size: 17px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pricing-content {
+  margin: 0 150px;
 }
