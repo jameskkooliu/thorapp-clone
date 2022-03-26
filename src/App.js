@@ -9,6 +9,7 @@ import ContactPage from './pages/Contact';
 import Pricing from './pages/Pricing';
 import CaseStudies from './pages/Case-Studies';
 import Faq from './pages/Faq';
+import About from './pages/About';
 import Supportpolicy from './pages/Supportpolicy';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome';
@@ -29,6 +30,10 @@ function App() {
             <Route path="/faq" element={<Faq />} />
             <Route path="/supportpolicy" element={<Supportpolicy />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/bi-service-ssrs-reports-sharepoint" element={<About />} />
+            <Route path="/list-sync-sql-sharepoint-online" element={<About />} />
+            <Route path="/project-sync-project-online" element={<About />} />
           </Routes>
           <Footer />
         </Fragment>
