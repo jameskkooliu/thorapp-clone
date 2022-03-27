@@ -31,7 +31,7 @@ function Onpremise() {
                 <div className='col-md-4'>
                     <div className='container'>
                         <div className='image-container d-flex justify-content-center'>
-                        <button className='btn btn-primary btn-snpashort'>PROJECT INTEGRATION ENGINE</button>
+                        <button className='btn btn-primary btn-snapshort'>PROJECT INTEGRATION ENGINE</button>
                             <img src={pic1} alt='not found' className='mb-4 premise-showcase-image' />
                         </div>
                         <div className='text-center'>
@@ -46,7 +46,7 @@ function Onpremise() {
                 <div className='col-md-4'>
                     <div className='container'>
                         <div className='image-container d-flex justify-content-center'>
-                        <button className='btn btn-primary btn-snpashort'>PROJECT SNAPSHOTS</button>
+                        <button className='btn btn-primary btn-snapshort'>PROJECT SNAPSHOTS</button>
                             <img src={pic2} alt='not found' className='mb-4 premise-showcase-image' />
                         </div>
                         <div className='text-center'>
@@ -61,7 +61,7 @@ function Onpremise() {
                 <div className='col-md-4'>
                     <div className='container'>
                         <div className='image-container d-flex justify-content-center'>
-                        <button className='btn btn-primary btn-snpashort'>REFLEX REPORTING</button>
+                        <button className='btn btn-primary btn-snapshort'>REFLEX REPORTING</button>
                             <img src={pic3} alt='not found' className='mb-4 premise-showcase-image' />
                         </div>
                         <div className='text-center'>
@@ -75,7 +75,7 @@ function Onpremise() {
                 </div>
             </div>
         </div>
-        <div className="contact-us-container" ref={quoteRef}>
+        <div className="quote-container" ref={quoteRef}>
             <Quote />
         </div>
     </div>

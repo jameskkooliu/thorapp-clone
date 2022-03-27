@@ -21,7 +21,8 @@ function Online() {
     const data = {
         toptitle: 'Contact US',
         title: 'Get in touch to request a quote or learn more about our apps',
-        content: ''
+        content: '',
+        btn_title: 'Send'
     }
     
     const showcaseRef = useRef(null)
@@ -127,19 +128,19 @@ function Online() {
             <div className="introduction pb-5">
                 <div className='container'>
                     <div className="row justify-content-center">
-                        <div className='intro-item col-md-4  text-center'>
+                        <div className='intro-item col-md-3  text-center'>
                             <img src={sharedPoint} alt="not found" className='itro-svg' />
                             <div className='intro-title'><p>SharePoint<br/>Expert</p></div>
                             <div className='intro-description'><p>More than 200,000 organizations and 190 million people are using SharePoint to share and manage content, knowledge, and applications to empower teamwork, quickly find information, and seamlessly collaborate across the organization.</p></div>
                             <Link to='/about'><button className='btn btn-primary'>Learn More</button></Link>
                         </div>
-                        <div className='intro-item col-md-4 text-center'>
+                        <div className='intro-item col-md-3 text-center'>
                             <img src={microsoft} alt="not found" className='itro-svg' />
                             <div className='intro-title'><p>Microsoft<br/>Certified</p></div>
                             <div className='intro-description'><p>By being a Certified Microsoft Partner we have access to the latest training, resources and dedicated support. This means we are always up-to-date on the latest features, releases and early product information to provide our clients a robust, seamless SharePoint experience.</p></div>
                             <Link to='/about'><button className='btn btn-primary'>Learn More</button></Link>
                         </div>
-                        <div className='intro-item col-md-4 text-center'>
+                        <div className='intro-item col-md-3 text-center'>
                             <img src={message} alt="not found" className='itro-svg' />
                             <div className='intro-title'><p>Reliable<br/>Partners</p></div>
                             <div className='intro-description'><p>We are proud to partner with BGI Solutions, an Australian company that masters our tools to deliver best-in-class service to our clients worldwide. Their agile team of IT specialists is ready to assist you with the configuration and implementation of our apps.</p></div>

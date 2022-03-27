@@ -12,21 +12,21 @@ body {
 }
 
 .logo img {
-  width: 120%;
+  width: 110%;
 }
 
 .navbar {
-  font-size: 17px !important;
+  font-size: 15px !important;
 }
 
-@media screen and (max-width: 1367px) {
+@media screen and (max-width: 1280px) {
   .logo {
     margin-top: 15px;
     margin-left: 10px !important;
   }
 
   .logo img {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -63,8 +63,8 @@ body {
 
 .main-back {
   width: 100% !important;
-  height: 450px !important;
-  opacity: 0.4;
+  height: 350px !important;
+  opacity: 0.3;
   object-fit: cover !important;
 }
 
@@ -72,6 +72,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 55%;
   transform: translate(-50%, -50%);
   padding: 0;
   border: 0;
@@ -84,11 +85,11 @@ body {
 .online-title{
   text-align:center;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 70px;
 }
 
 .middle-border {
-  border: 1px solid #FFF;
+  border: 0.5px solid #FFF;
   width: 150px;
 }
 
@@ -108,16 +109,31 @@ body {
 .btn-showcase {
   position: absolute;
   bottom: 1%;
-  left: 33%;
+  width: 150px;
+  left: 25%;
+  font-size: 12px;
+  border-radius: 10px;
   background-color: rgb(250, 54, 224);
   color: #FFF;
   z-index: 100;
 }
 
-.btn-snpashort {
+.btn-showcase:hover {
+  color: #FFF;
+  background-color: rgb(138, 45, 125);
+}
+
+.btn {
+  font-size: 12px;
+}
+
+.btn-snapshort {
   position: absolute;
   bottom: 1%;
-  left: 22%;
+  left: 20%;
+  /* right: 22%; */
+  width: 220px;
+  font-size: 12px;
   background-color: #3c21d8;
   color: #FFF;
   z-index: 100;
@@ -144,7 +160,7 @@ body {
 }
 .online-slide {
   min-height: 300px;
-  background-image: linear-gradient(to right,rgb(238, 31, 221),rgb(89, 89, 199));
+  background-image: linear-gradient(to right,rgb(211, 83, 250),rgb(70, 70, 233));
 }
 
 .online-carousel-card {
@@ -250,12 +266,24 @@ body {
 }
 
 
+.quote-container {
+  background: #5353f4f5;
+}
+
 .contact-us-container {
   background: rgba(186 55 236 / 85%);
 }
+
+.contact-title {
+  display: inline-flex;
+  align-items: flex-start;
+  font-size: 25px;
+}
+
 .contact-title-text {
   font-weight: 700;
 }
+
 
 .name-input{
   margin-top: 40px;
@@ -269,9 +297,11 @@ input {
 
 .btn-send {
   border: 1px solid #fff;
+  color: #FFF;
 }
 .btn-send:hover {
-  background-color: rgb(141, 90, 137);
+  color: #FFF;
+  background-color: rgb(160, 100, 155);
 }
 
 .link {
@@ -305,7 +335,6 @@ input {
 .quote-btn {
   background-color: rgb(224,68,110);
   padding: 10px 35px 10px 35px;
-  font-size: 20px;
   border-radius: 10px;
 }
 
@@ -430,7 +459,17 @@ input {
     border: 2px solid #FFF;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 200px;
+    width: 200px !important;
+  }
+
+  
+  .cases-btn {
+    width: 125px !important;
+  }
+
+  .case-btn:hover {
+    color: rgb(199, 15, 199);
+    border: 2px solid rgb(199, 15, 199);
   }
 
   .case-title {
@@ -438,6 +477,11 @@ input {
     font-size: 20px;
     font-weight: bold;
   }
+}
+
+.cases-btn:hover {
+  color: rgb(185, 21, 226);
+  border: 2px solid rgb(185, 21, 226);
 }
 
 @media screen and (max-width: 996px) {
@@ -491,7 +535,7 @@ input {
 
   .middle-border-case {
     margin-top: 10px;
-    border: 1px solid #FFF !important;
+    border: 0.5px solid #FFF !important;
     width: 250px !important;
   }
 }
@@ -532,7 +576,7 @@ input {
 
 .middle-border-case {
   margin-top: 20px;
-  border: 1px solid #FFF;
+  border: 0.5px solid #FFF;
   width: 500px;
 }
 
@@ -545,6 +589,11 @@ input {
   padding-top: 15px;
   padding-bottom: 15px;
   width: 250px;
+}
+
+.case-btn:hover {
+  color: rgb(199, 15, 199);
+  border: 2px solid rgb(199, 15, 199);
 }
 
 .eductaion-title {
@@ -636,7 +685,7 @@ input {
 }
 
 .middle-faq-border {
-  border: 1px solid rgb(114, 111, 111);
+  border: 0.5px solid rgb(114, 111, 111);
   margin-top: 40px;
   width: 100%;
   /* width: 1050px; */
@@ -665,7 +714,7 @@ input {
 }
 
 .middle-sp-border {
-  border: 1px solid rgb(68, 67, 67);
+  border: 0.5px solid rgb(68, 67, 67);
   margin-top: 40px;
   width: 60%;
 }
@@ -817,7 +866,6 @@ input[type="email"] {
   font-size: 70px;
   color: #fff;
   text-align: center;
-  margin-top: 20px;
 }
 
 .pricing-desc {
@@ -836,11 +884,15 @@ input[type="email"] {
 }
 
 .pricing-content {
-  margin: 0 150px;
+  margin: 0 120px;
+}
+
+.contact-title-content {
+  font-size: 20px;
 }
 
 .about-content {
-  margin: 0 10%;
+  margin: 0 5%;
   margin-top: 20px;
 }
 

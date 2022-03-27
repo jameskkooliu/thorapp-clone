@@ -47,8 +47,6 @@ function PricingModal ({ open, onClose}) {
             <CloseIcon />
             </IconButton>
 		</Toolbar>
-        {/* <DialogContent>
-          <DialogContentText> */}
             <div className="pricing-content">
               <div className="pricing-title">PRICING</div>
               <div className="pricing-desc">Consumption is calculated by compute time. You can find out the per minute compute rate and monitor it from within each app.</div>

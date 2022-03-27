@@ -8,7 +8,7 @@ import pc from '../../assets/svgs/pc.svg';
 import strunctureman from '../../assets/images/c1a65d_3ec54db91e0745e48075740418a30672_mv2_d_3980_1853_s_2.webp';
 import capterra from '../../assets/images/sample_review_badge-22f0d57b3a566895df95.webp'
 import ProjectSyncImage from '../../assets/images/ProjectSync.webp'
-import ServiceContact from "../../components/ServiceContact";
+import Contact from "../../components/Contact";
 
 
 function ProjectSync() {
@@ -16,7 +16,8 @@ function ProjectSync() {
     const data = {
         toptitle: 'Get started today! No credit card required.',
         title: 'Request your 30-day trial and get $50 credit to test ProjectSync in your own SharePoint environment',
-        content: 'Upon submitting this form, you will be provided with the installation instructions for ProjectSync. These instructions will lead you through to the app installation and provide further links to related documentation.'
+        content: 'Upon submitting this form, you will be provided with the installation instructions for ProjectSync. These instructions will lead you through to the app installation and provide further links to related documentation.',
+        btn_title: 'START TRIAL'
     }
 
     const navigate = useNavigate();
@@ -146,7 +147,7 @@ function ProjectSync() {
                 </div>
             </div>
             <div className="service-contact" ref={contactRef} >
-                <ServiceContact propsdata={data} />
+                <Contact propsdata={data} />
             </div>
         </div>
     )

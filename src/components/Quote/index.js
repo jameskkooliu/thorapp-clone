@@ -1,4 +1,6 @@
 import React from "react";
+import circle from '../../assets/svgs/circle.svg';
+import right from '../../assets/svgs/right.svg';
 
 function Quote() {
     return(
@@ -7,10 +9,11 @@ function Quote() {
                 <div className="col-md-6 contact-us">
                     <form className="contact-form">
                         <div className="contact-title">
+                            <img src={circle} alt='circle' width='25px' /> &nbsp;
                             <h5 className="text-white contact-title-text">Get started today! </h5>
                         </div>
                         <div className="contact-description">
-                            <h2 className="text-white contact-title-text">Request a quote for our<br/> On-premise apps</h2>
+                            <h1 className="text-white contact-title-text">Request a quote for our<br/> On-premise apps &nbsp;<img src={right} alt='right' width='20px' /></h1>
                         </div>
                         <div className="name-input d-flex flex-row">
                             <input type="text" className="form-control" placeholder="First Name" style={{marginRight: '20px'}} />

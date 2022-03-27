@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from "react";
+import { useNavigate } from "react-router-dom";
 import header from '../../assets/images/82247c59afc5287da5d4200cc85bef0f.webp';
 import key from '../../assets/svgs/key.svg';
 import pc from '../../assets/svgs/pc.svg';
@@ -6,13 +7,15 @@ import out from '../../assets/svgs/out.svg';
 import ring from '../../assets/svgs/ring.svg';
 import capterra from '../../assets/images/sample_review_badge-22f0d57b3a566895df95.webp'
 import ListSyncImage from '../../assets/images/ListSync.webp'
-import ServiceContact from "../../components/ServiceContact";
 import Contact from "../../components/Contact";
 import strunctureman from '../../assets/images/c1a65d_3ec54db91e0745e48075740418a30672_mv2_d_3980_1853_s_2.webp';
 import firstImage from '../../assets/images/c1a65d_57394b4348d54e48926ef0dfde67fcca_mv2_d_4000_2667_s_4_2 (1).webp';
 import secondImage from '../../assets/images/c1a65d_c013db23cd0c41f19f190a2fc21b6dac_mv2_d_2500_1522_s_2 (1).webp';
 
 function ListSync() {
+
+    const navigate = useNavigate();
+
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
@@ -26,7 +29,12 @@ function ListSync() {
     const data = {
         toptitle: 'Get started today! No credit card required.',
         title: 'Request your 30-day trial and get $50 credit to test ListSync in your own SharePoint environment',
-        content: 'Upon submitting this form, you will be provided with the installation instructions for ListSync. These instructions will lead you through adding the app to your SharePoint site and provide further links to related documentation.'
+        content: 'Upon submitting this form, you will be provided with the installation instructions for ListSync. These instructions will lead you through adding the app to your SharePoint site and provide further links to related documentation.',
+        btn_title: 'START TRIAL'
+    }
+
+    const MoveEducation = () => {
+        navigate('/case-studies');
     }
 
     return (
@@ -92,7 +100,7 @@ function ListSync() {
                                         <div className="d-flex justify-content-center"><p className='project-border'></p></div>
                                         <p className="utilities">EDUCATION</p>
                                         <span className="case-studies">Get to know how companies from this industry are increasing their productivity with ListSync</span>
-                                        <div><button className="btn utility-btn">LEARN MORE</button></div>
+                                        <div><button className="btn utility-btn" onClick={()=>MoveEducation()}>LEARN MORE</button></div>
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +114,7 @@ function ListSync() {
                                         <div className="d-flex justify-content-center"><p className='project-border'></p></div>
                                         <p className="utilities">FINANCE</p>
                                         <span className="case-studies">Get to know how companies from this industry are increasing their productivity with ListSync</span>
-                                        <div><button className="btn utility-btn">LEARN MORE</button></div>
+                                        <div><button className="btn utility-btn" onClick={()=>MoveEducation()}>LEARN MORE</button></div>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +128,7 @@ function ListSync() {
                                         <div className="d-flex justify-content-center"><p className='project-border'></p></div>
                                         <p className="utilities">UTILITIES</p>
                                         <span className="case-studies">Get to know how companies from this industry are increasing their productivity with ListSync</span>
-                                        <div><button className="btn utility-btn">LEARN MORE</button></div>
+                                        <div><button className="btn utility-btn" onClick={()=>MoveEducation()}>LEARN MORE</button></div>
                                     </div>
                                 </div>
                             </div>
