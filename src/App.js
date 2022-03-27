@@ -11,6 +11,9 @@ import CaseStudies from './pages/Case-Studies';
 import Faq from './pages/Faq';
 import About from './pages/About';
 import Supportpolicy from './pages/Supportpolicy';
+import Service from './pages/Service';
+import ProjectSync from './pages/ProjectSync';
+import ListSync from './pages/ListSync';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome';
 import './App.css';
@@ -31,9 +34,9 @@ function App() {
             <Route path="/supportpolicy" element={<Supportpolicy />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about" element={<About />} />
-            <Route path="/bi-service-ssrs-reports-sharepoint" element={<About />} />
-            <Route path="/list-sync-sql-sharepoint-online" element={<About />} />
-            <Route path="/project-sync-project-online" element={<About />} />
+            <Route path="/bi-service-ssrs-reports-sharepoint" element={<Service />} />
+            <Route path="/list-sync-sql-sharepoint-online" element={<ListSync />} />
+            <Route path="/project-sync-project-online" element={<ProjectSync />} />
           </Routes>
           <Footer />
         </Fragment>

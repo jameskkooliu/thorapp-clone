@@ -18,6 +18,11 @@ import Contact from "../../components/Contact";
 
 function Online() {
 
+    const data = {
+        toptitle: 'Contact US',
+        title: 'Get in touch to request a quote or learn more about our apps',
+        content: ''
+    }
     
     const showcaseRef = useRef(null)
 
@@ -144,7 +149,7 @@ function Online() {
                 </div>
             </div>
             <div className="contact-us-container">
-                <Contact />
+                <Contact propsdata={data} />
             </div>
         </div>
     )

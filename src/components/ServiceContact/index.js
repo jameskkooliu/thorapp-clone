@@ -1,20 +1,16 @@
 import React from "react";
 
-function Contact( {propsdata} ) {
-    const { toptitle, title, content } = propsdata;
+function ServiceContact() {
     return(
         <div className="container">
             <div className="row pt-5 justify-content-center">
                 <div className="col-md-6 contact-us">
                     <form className="contact-form">
                         <div className="contact-title">
-                            <h5 className="text-white contact-title-text">{toptitle}</h5>
+                            <h5 className="text-white contact-title-text">Get started today! No credit card required.</h5>
                         </div>
                         <div className="contact-description">
-                            <h2 className="text-white contact-title-text">{title}</h2>
-                        </div>
-                        <div className="contact-description mt-5">
-                            <span className="text-white contact-title-text">{content}</span>
+                            <h2 className="text-white contact-title-text">Request your 30-day trial and get $50 credit to test BI Service in your own SharePoint environment</h2>
                         </div>
                         <div className="name-input d-flex flex-row">
                             <input type="text" className="form-control" placeholder="First Name" style={{marginRight: '20px'}} required />
@@ -52,4 +48,4 @@ function Contact( {propsdata} ) {
     )
 }
 
-export default Contact;
+export default ServiceContact;
