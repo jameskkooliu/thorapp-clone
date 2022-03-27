@@ -133,15 +133,15 @@ function Pricing() {
                         <span className="element text-center">Valid for 30 days</span>
                         <div className="element get-free">GET $50 FOR FREE</div>
                         <div className="element text-bold">Unlimited Users</div>
-                        <button className="btn btn-success" onClick={handleClickDownloadOpen}>Get Started</button>
+                        <button className="btn btn-trial" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="p-4">Best plan to test your data consumption</div>
                         <div className="check-item">✓</div>
                         <div className="check-item">✓</div>
-                        <button className="btn btn-success" onClick={handleClickDownloadOpen}>Get Started</button>
+                        <button className="btn btn-trial" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="p-4">Best plan to test your data consumption</div>
                         <div className="check-item">✓</div>
                         <div className="check-item">✓</div>
-                        <button className="btn btn-success" onClick={handleClickDownloadOpen}>Get Started</button>
+                        <button className="btn btn-trial" onClick={handleClickDownloadOpen}>Get Started</button>
                         <div className="check-item">✓</div>
                     </div>
                     <div className="col-md-2 col-xs-12 text-center">
@@ -217,11 +217,11 @@ function Pricing() {
                 </div>
             </div>
             <div className="container mt-5 mb-5">
-                <div className="row">
-                    <div className="col-lg-7 p-0">
+                <div className="row justify-content-center">
+                    <div className="col-lg-6 p-0">
                         <img src={tableMeeting} alt='meeting' className="case-image" />
                     </div>
-                    <div className="col-lg-5 table-right">
+                    <div className="col-lg-4 table-right">
                         <div className="meeting-text"><h3>FOR <span className="on-premise-apps">ON-PREMISE APPS</span>, PLEASE CONTACT US.</h3></div>
                         <button className="btn quote" onClick={redirectToRequestQuote}>Request Quote</button>
                     </div>

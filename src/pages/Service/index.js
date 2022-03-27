@@ -9,8 +9,7 @@ import enhance from '../../assets/svgs/enhance.svg';
 import mailbox from '../../assets/svgs/mailbox.svg';
 import capterra from '../../assets/images/sample_review_badge-22f0d57b3a566895df95.webp'
 import BIService from '../../assets/images/BIService.webp'
-import ServiceContact from "../../components/ServiceContact";
-
+import Contact from "../../components/Contact";
 
 
 function Service() {
@@ -18,7 +17,8 @@ function Service() {
     const data = {
         toptitle: '<span className="blue-color">Get started today! No credit card required.<span>',
         title: 'Request your 30-day trial and get $50 credit to test BI Service in your own SharePoint environment',
-        content: 'Upon submitting this form, you will be provided with the installation instructions for BI Service. These instructions will lead you through adding the app to your SharePoint site and provide further links to related documentation.'
+        content: 'Upon submitting this form, you will be provided with the installation instructions for BI Service. These instructions will lead you through adding the app to your SharePoint site and provide further links to related documentation.',
+        btn_title: 'Send'
     }
 
     useEffect(() => {
@@ -49,7 +49,7 @@ function Service() {
                 <h2 className='border-end border-1 microsoft-border'></h2>
                 <div className="desc">
                     <span className="d-flex flex-column">By being a Certified Microsoft Partner we have access to the latest training,<br/>resources and dedicated support. This means we are always up-to-date on the<br/> latest features, releases and early product information to provide our clients a<br />    robust, seamless SharePoint experience.</span>
-                    <a href="https://appsource.microsoft.com/en-us/product/office/WA104381900?tab=Overview" target="_blank" className="">Check this app on Microsoft App Store  >></a>
+                    <a href="https://appsource.microsoft.com/en-us/product/office/WA104381900?tab=Overview" target="_blank">Check this app on Microsoft App Store</a>
                 </div>
             </div>
             <div className="container">
@@ -154,7 +154,7 @@ function Service() {
                 </div>
             </div>
             <div className="service-contact" ref={contactRef} >
-                <ServiceContact propsdata={data} />
+                <Contact propsdata={data} />
             </div>
         </div>
 

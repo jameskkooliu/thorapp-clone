@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Dialog from '@mui/material/Dialog';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
@@ -7,6 +7,8 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { makeStyles } from '@material-ui/core';
+import axios from 'axios';
+
 const useStyles = makeStyles({
 	newPosOfDialog: {
 		left: "60%",
@@ -18,8 +20,26 @@ const useStyles = makeStyles({
 });
 
 
-
+const API_RUL='http://localhost:5000';
 function ContactModal ({ open, onClose, ransitionComponent}) {
+
+	const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [jobTitle, setJobTitle] = useState('');
+    const [phone, setPhone] = useState('');
+    const [company, setCompany] = useState('');
+    const [country, setCountry] = useState('');
+    const [message, setMessage] = useState('');
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+		axios.post(`${API_RUL}/api/mail`, JSON.stringify({firstName, lastName, email, jobTitle, phone, company, country, message}))
+		.then(res => console.log(res))
+		.catch(err => console.log(err));
+    }
+
+
 	
 	const classes = useStyles();
     return (
@@ -48,25 +68,25 @@ function ContactModal ({ open, onClose, ransitionComponent}) {
 				<div className="contact-modal-content">Get in touch to learn more about our annual plans for Online Apps:</div>
 			</DialogContentText>
 			<DialogContent>
-				<form>
+				<form  onSubmit={(e) => handleSubmit(e)}>
 					<div className="d-flex justify-content-between">
-						<input type="text" className="contact-input form-control" placeholder="First Name" required/>
-						<input type="text" className="contact-input form-control" placeholder="Last Name" required/>
+						<input type="text" name='firstName' value={firstName} onChange={(e) => setFirstName(e.target.value)}  className="contact-input form-control" placeholder="First Name" required/>
+						<input type="text" name='lastName' value={lastName} onChange={(e) => setLastName(e.target.value)} className="contact-input form-control" placeholder="Last Name" required/>
 					</div>
 					<div className="d-flex">
-						<input type="email" className="contact-input form-control" placeholder="Email" required/>
+						<input type="email" name='email' value={email} onChange={(e) => setEmail(e.target.value)} className="contact-input form-control" placeholder="Email" required/>
 					</div>
 					<div className="d-flex justify-content-between">
-						<input type="text" className="contact-input form-control" placeholder="Job Title" required/>
-						<input type="text" className="contact-input form-control" placeholder="Phone" required/>
+						<input type="text" name='jobTitle' value={jobTitle} onChange={(e) => setJobTitle(e.target.value)} className="contact-input form-control" placeholder="Job Title" required/>
+						<input type="text" name='phone' value={phone} onChange={(e) => setPhone(e.target.value)} className="contact-input form-control" placeholder="Phone" required/>
 					</div>
 					<div className="d-flex justify-content-between">
-						<input type="text" className="contact-input form-control" placeholder="Company" required/>
-						<input type="text" className="contact-input form-control" placeholder="Country" required/>
+						<input type="text" name='company' value={company} onChange={(e) => setCompany(e.target.value)} className="contact-input form-control" placeholder="Company" required/>
+						<input type="text" name='country' value={country} onChange={(e) => setCountry(e.target.value)} className="contact-input form-control" placeholder="Country" required/>
 					</div>
 					
 					<div className="d-flex">
-						<input type="text" className="contact-input contact-message form-control" placeholder="Message" required/>
+						<input type="text" name='message' value={message} onChange={(e) => setMessage(e.target.value)} className="contact-input contact-message form-control" placeholder="Message" required/>
 					</div>
 					<input type="submit" className="submit-btn form-control" value="SUBMIT" />
 				</form>

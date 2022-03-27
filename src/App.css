@@ -131,6 +131,7 @@ body {
   position: absolute;
   bottom: 1%;
   left: 20%;
+  border-radius: 10px;
   /* right: 22%; */
   width: 220px;
   font-size: 12px;
@@ -336,6 +337,16 @@ input {
   background-color: rgb(224,68,110);
   padding: 10px 35px 10px 35px;
   border-radius: 10px;
+}
+
+.quote:hover {
+  color: rgb(190, 33, 230) !important;
+  border: 1px solid rgb(190, 33, 230);
+}
+
+
+.quote {
+  font-size: 16px;
 }
 
 .calc-price {
@@ -643,20 +654,9 @@ input {
   margin-bottom: 10px;
 }
 
-.btn-contact {
-  background-color: #d221d8;
-  color: #fff;
-}
-
 .used-by {
   color: #3c21d8;
 }
-
-.btn-start {
-  background-color: #3c21d8;
-  color: #fff;
-}
-
 .image-container{
   position: relative;
 }
@@ -1293,4 +1293,49 @@ input[type="email"] {
 
 .blue-color {
   color: #15eb55;
+}
+
+.btn-trial {
+  background-color: #2dedb4;
+  color: #FFF;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+}
+
+.btn-start:hover {
+  background-color: #6827f5;
+  color: #FFF;
+}
+
+.btn-start {
+  background-color: #854dff;
+  color: #FFF;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+}
+
+.btn-trial:hover {
+  background-color: #168d83;
+  color: #FFF;
+}
+
+.btn-contact {
+  background-color: #dd1cff;
+  color: #FFF;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+}
+
+.btn-contact:hover {
+  background-color: #bb0eda;
+  color: #FFF;
 }
