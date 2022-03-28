@@ -14,6 +14,13 @@ import Supportpolicy from './pages/Supportpolicy';
 import Service from './pages/Service';
 import ProjectSync from './pages/ProjectSync';
 import ListSync from './pages/ListSync';
+import Privacy from './pages/Privacy';
+import ReturnsPolicy from './pages/ReturnsPolicy';
+import Terms from './pages/Terms';
+import End from './pages/End';
+import Shipping from './pages/Shipping';
+import TOS from './pages/TOS';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome';
 import './App.css';
@@ -37,6 +44,12 @@ function App() {
             <Route path="/bi-service-ssrs-reports-sharepoint" element={<Service />} />
             <Route path="/list-sync-sql-sharepoint-online" element={<ListSync />} />
             <Route path="/project-sync-project-online" element={<ProjectSync />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/returns-policy" element={<ReturnsPolicy />} />
+            <Route path="/terms-and-conditions" element={<Terms />} />
+            <Route path="/eula" element={<End />} />
+            <Route path="/shipping" element={<Shipping />} />
+            <Route path="/terms-of-service" element={<TOS />} />
           </Routes>
           <Footer />
         </Fragment>
