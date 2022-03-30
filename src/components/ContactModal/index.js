@@ -8,6 +8,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { makeStyles } from '@material-ui/core';
 import axios from 'axios';
+import config from '../../config/keys';
 
 const useStyles = makeStyles({
 	newPosOfDialog: {
@@ -19,8 +20,6 @@ const useStyles = makeStyles({
 	}
 });
 
-
-const API_RUL='http://localhost:5000';
 function ContactModal ({ open, onClose, ransitionComponent}) {
 
 	const [firstName, setFirstName] = useState('');
@@ -34,7 +33,7 @@ function ContactModal ({ open, onClose, ransitionComponent}) {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-		axios.post(`${API_RUL}/api/mail`, JSON.stringify({firstName, lastName, email, jobTitle, phone, company, country, message}))
+		axios.post(`${config.REACT_APP_SERVER_URL}/api/mail`, JSON.stringify({firstName, lastName, email, jobTitle, phone, company, country, message}))
 		.then(res => console.log(res))
 		.catch(err => console.log(err));
     }

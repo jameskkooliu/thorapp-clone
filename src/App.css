@@ -755,11 +755,11 @@ input {
 .contact-modal-title {
   font-weight: bold;
   color: #FFF;
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .contact-modal-content {
-  font-size: 20px;
+  font-size: 17px;
   color: #FFF;
   margin-left: 30px;
 }
@@ -771,8 +771,12 @@ input {
   width: 48%;
   height: 50px;
   /* margin-right: 20px; */
-  margin-top: 30px;
+  margin-top: 20px;
   color: #fff;
+}
+
+.contact-input:hover {
+  border: solid 5px rgb(186, 58, 218) !important;
 }
 
 .contact-input:focus {
@@ -796,33 +800,34 @@ input[type="email"] {
 
 .submit-btn {
   background-color: #FFF;
+  border-radius: 2px !important;
   color: rgb(98, 1, 255);
   font-weight: 600;
-  margin-top: 20px;
-  height: 80px;
+  margin-top: 10px;
+  height: 60px;
   font-size: 20px;
-  width: 48%;
+  width: 40%;
 }
 .submit-btn:hover {
-  background-color: rgb(226, 87, 134);
+  background-color: rgb(186, 58, 218);
   color: #fff;
 }
 
 .download-modal-title {
-  margin-top: 120px;
+  margin-top: 50px;
   text-align: center;
   color: #FFF;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 600;
 }
 
 .download-modal-content{
-  font-size: 25px;
   text-align: center;
   color: #FFF;
 }
 
 .download-modal-list-container{
+  font-size: 17px;
   margin: 0 100px
 }
 
@@ -832,7 +837,7 @@ input[type="email"] {
   }
 }
 .download-modal-list{
-  font-size: 25px;
+  font-size: 17px;
   color: #FFF;
 }
 .download-btn {
@@ -903,9 +908,6 @@ input[type="email"] {
   margin-top: 20px;
 }
 
-.case-desc {
-  margin-top: 30px;
-}
 
 .beg-logo {
   height: 60px;
@@ -1169,6 +1171,14 @@ input[type="email"] {
 }
 
 @media screen and (max-width: 768px){
+
+  .carousel-control-prev-icon {
+    width: 15px !important;
+  }
+
+  .carousel-control-next-icon {
+    width: 15px !important;
+  }
   
   .projectSync-right {
     position: absolute;
@@ -1301,9 +1311,9 @@ input[type="email"] {
   background-color: #2dedb4;
   color: #FFF;
   border-radius: 10px;
-  font-size: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-weight: bold;
 }
 
@@ -1316,9 +1326,9 @@ input[type="email"] {
   background-color: #854dff;
   color: #FFF;
   border-radius: 10px;
-  font-size: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-weight: bold;
 }
 
@@ -1331,13 +1341,201 @@ input[type="email"] {
   background-color: #dd1cff;
   color: #FFF;
   border-radius: 10px;
-  font-size: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-weight: bold;
 }
 
 .btn-contact:hover {
   background-color: #bb0eda;
   color: #FFF;
+}
+
+.case-content {
+  margin-top: 25px;
+}
+.case-studies-link {
+  color: #3c21d8;
+}
+
+.contact-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(255, 255, 255) !important;
+  opacity: 1; /* Firefox */
+}
+
+.price-item {
+  width: 16% !important;
+  text-align: center;
+}
+
+.price-title {
+  font-size: 20px;
+}
+
+.price-card {
+  justify-content: center;
+  width: 120px;
+  color: #FFF;
+  display: inline-flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  height: 70px;
+  margin: auto;
+}
+
+.trial {
+  background-color: #2dedb4;
+}
+
+.font-trial {
+  color: #2dedb4;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.solo {
+  background-color: #854dff;
+}
+.font-solo {
+  color: #854dff;
+  font-weight: bold;
+  font-size: 15px;
+}
+.enterprise {
+  background-color: #dd1cff;
+}
+.font-enterprise {
+  color: #dd1cff;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.top-indicator {
+  font-size: 12px;
+  color: #854dff;
+}
+
+.price-date {
+  font-size: 15px;
+}
+
+.price-kind {
+  font-size: 25px;
+}
+
+.bg-gray {
+  background-color: #f0f0f0;
+}
+
+.round-gray {
+  border-left: 4px solid #f0f0f0;
+  border-right: 4px solid #f0f0f0;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .price-title {
+    font-size: 15px !important;
+  } 
+  .price-card {
+    width: 100px !important;
+    font-size: 25px !important;
+  }
+  .price-date {
+    font-size: 12px !important;
+  }
+  .font-trial {
+    font-size: 12px !important;
+  }
+  .font-solo {
+    font-size: 12px !important;
+  }
+  .font-enterprise {
+    font-size: 12px !important;
+  }
+
+  .price-kind {
+    font-size: 15px;
+  }
+
+  .btn-contact {
+    border-radius: 8px !important;
+    font-size: 8px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .btn-trial {
+    border-radius: 8px !important;
+    font-size: 8px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .btn-start {
+    border-radius: 8px !important;
+    font-size: 8px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  
+}
+
+.negotiated {
+  font-size: 10px;
+  color: #dd1cff;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.price-left-item {
+  width: 20%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .price-title {
+    font-size: 10px !important;
+  }  
+  .price-card {
+    width: 60px !important;
+    font-size: 20px !important;
+  }
+  .price-date {
+    font-size: 10px !important;
+  }
+  .font-trial {
+    font-size: 10px !important;
+  }
+  .font-solo {
+    font-size: 8px !important;
+  }
+  .font-enterprise {
+    font-size: 10px !important;
+  }
+
+  .price-kind {
+    font-size: 10px;
+  }
+
+  .btn-contact {
+    border-radius: 8px !important;
+    font-size: 8px !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+  .btn-trial {
+    border-radius: 8px !important;
+    font-size: 8px !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+  .btn-start {
+    border-radius: 8px !important;
+    font-size: 8px !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
 }

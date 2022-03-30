@@ -35,7 +35,7 @@ function Faq() {
                 <div className="faq-sb2-title">Which plan is right for me?</div>
                 <div className="faq-description">Only data usage is charged to a customer's <a href="https://www.thorapps.com/pricing" target="_blank" className="faq-links">Payment Plans</a> , so we encourage you to use our $50 trial valid for 30 days to have a feel of how much data you consume and choose the plan that suits you best. Once your monthly plan limit is reached, you can either continue using ThorApps services, with additional usage charges applied to your invoice or have the services disabled until the next payment period begins. To check how much data you have consumed, please go to Account Settings (Cog on the top right corner), then click on Usage Report. </div>
                 <div className="faq-sb2-title">How do you calculate my usage? </div>
-                <div className="faq-description">Usage is calculated by compute time. The average cost per minute for BI Service is U$S 1.3 and for ListSync is U$S 0.13.  </div>
+                <div className="faq-description">Usage is calculated by compute time. The average cost per minute for BI Service is $US 1.3 and for ListSync is $US 0.13.  </div>
                 <div className="faq-sb2-title">How can I buy a plan? </div>
                 <div className="faq-description">Please download our <a href="https://support.thorapps.com/Downloads/ThorApps%20Online%20Services%20Purchasing%20Guide.pdf" target="_blank" className="faq-links">Purchasing Guide</a> to manage paying for your ThorApps Online Services subscription. </div>
                 <div className="faq-sb2-title">What currency am I charged in? </div>
@@ -45,9 +45,9 @@ function Faq() {
                 <div className="faq-sb2-title">Can I change my plan?  </div>
                 <div className="faq-description">You can upgrade, downgrade, or cancel your <a href="https://www.thorapps.com/pricing" target="_blank" className="faq-links">Payment Plans</a> any time you want. To do so, please go to Account Settings (Cog on the top right corner), then click on Payment Plan. Payments are calculated and processed on the 2nd day of the calendar month for the previous calendar month.</div>
                 <div className="faq-sb2-title">How can I cancel my plan?  </div>
-                <div className="faq-description">If you wish to submit a cancel request for your ThorApps services,  please contact us on  <a href="mailto:info@thorapps.com" className="faq-links">info@thorapps.com</a>and a representative will contact you in within 24 hours.</div>
+                <div className="faq-description">If you wish to submit a cancel request for your ThorApps services,  please contact us on <a href="mailto:info@thorapps.com" className="faq-links">info@thorapps.com</a> and a representative will contact you in within 24 hours.</div>
                 <div className="faq-sb2-title">Do users need to sign in to use the apps? </div>
-                <div className="faq-description">Once signed in to their SharePoint Online environment users, receive no further sign in prompts. </div>
+                <div className="faq-description">Once signed in to their SharePoint Online environment users receive no further sign in prompts. </div>
                 <div className="faq-sb2-title">Can you ensure my data remains in my local region? </div>
                 <div className="faq-description">We are limited to using Microsoft Azure data centers, but please contact us for your specific requirements. </div>
                 <div className="faq-sb2-title">Can I add more people from my company to the same ThorApps account? </div>
@@ -169,7 +169,7 @@ Reflex Reporting avoids these problems, by allowing the report to query content 
                 </div>
                 <div className="faq-sb2-title">Why is the Project Integration Engine a better option than hiring a developer? </div>
                 <div className="faq-description">Project Server integration has traditionally been done by hiring a software developer to build a custom component using the Project Server PSI to integrate between Project Server and other line of business systems or integration services, e.g. SAP. 
-The PSI is a set of web service method calls that only a software developer can leverage, but there are quirks and limitations (eg. only a limited size of change can be uploaded; some elements are managed through simple datasets while others are custom XML strings, add operations must be separated from update operations, it is complicated!). The result is buggy, flaky integration components and a Project Server implementation project that’s goes way over budget, over time and has limited functionality. More often than not hiring the right developer is rare and the developer finds themselves well out of their comfort zone. 
+The PSI is a set of web service method calls that only a software developer can leverage, but there are quirks and limitations (eg. only a limited size of change can be uploaded; some elements are managed through simple datasets while others are custom XML strings, add operations must be separated from update operations, it is complicated!). The result is buggy, flaky integration components and a Project Server implementation project that goes way over budget, over time and has limited functionality. More often than not hiring the right developer is rare and the developer finds themselves well out of their comfort zone. 
 
 By wrapping the PSI in a user-friendly interface, the whole process is altogether much more straightforward, cheaper and more reliable than hiring a developer. 
 

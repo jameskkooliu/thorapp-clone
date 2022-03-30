@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import circle from '../../assets/svgs/circle.svg';
 import right from '../../assets/svgs/right.svg';
 import axios from 'axios';
-const API_RUL='http://localhost:5000';
+import config from '../../config/keys';
 function Quote() {
 
     const [firstName, setFirstName] = useState('');
@@ -16,7 +16,7 @@ function Quote() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post(`${API_RUL}/api/mail`, JSON.stringify({firstName, lastName, email, jobTitle, phone, company, country, message}))
+        axios.post(`${config.REACT_APP_SERVER_URL}/api/mail`, JSON.stringify({firstName, lastName, email, jobTitle, phone, company, country, message}))
         .then(res => console.log(res))
         .catch(err => console.log(err));
     }

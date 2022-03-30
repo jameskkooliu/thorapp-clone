@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import mainBack from '../../assets/images/82247c59afc5287da5d4200cc85bef0f.webp';
 import showcase1 from '../../assets/images/Computer with Graph.webp';
@@ -25,14 +25,14 @@ function Online() {
         btn_title: 'Send'
     }
     
-    const showcaseRef = useRef(null)
+    // const showcaseRef = useRef(null)
 
-    const scrollToShowcase = () => {
-        showcaseRef.current.scrollIntoView({ behavior: "smooth" })
-    }
+    // const scrollToShowcase = () => {
+    //     showcaseRef.current.scrollIntoView({ behavior: "smooth" })
+    // }
 
     useEffect(() => {
-        scrollToShowcase();
+        window.scrollTo(0, 0)
     }, []);
 
     return(
@@ -47,7 +47,7 @@ function Online() {
                     </h4>
                 </div>
             </div>
-            <div className="container" ref={showcaseRef}>
+            <div className="container">
                 <div className="row mt-5 justify-content-center">
                     <div className="col-md-3 showcase-item">
                         <div className='image-container d-flex justify-content-center'>

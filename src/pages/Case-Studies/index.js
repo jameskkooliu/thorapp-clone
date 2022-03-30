@@ -75,7 +75,7 @@ function CaseStudies() {
                         <div className="p-0">
                             <h1 className="eductaion-title">Education</h1>
                             <div className="d-flex">
-                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button></Link>
+                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BI SERVICE</button></Link>
                                 <Link to="/list-sync-sql-sharepoint-online"><button className="cases-btn btn">LIST SYNC</button></Link>
                             </div>
                             <div className="case-content">
@@ -84,7 +84,7 @@ function CaseStudies() {
                             </div>
                             <div className="case-content">
                                 <div className="case-title">SOLUTION</div>
-                                <div className="case-desc">After close consultation with the client we implemented ThorApps Online Services, making use of the BI Service we were able to create an automated multi-page report with charts detailing performance against target.</div>
+                                <div className="case-desc">After close consultation with the client we implemented ThorApps Online Services, making use of the <Link className='case-studies-link' to='/bi-service-ssrs-reports-sharepoint'>BI Service</Link> we were able to create an automated multi-page report with charts detailing performance against target.</div>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">RESULT</div>
@@ -102,7 +102,7 @@ function CaseStudies() {
                         <div className="p-0">
                             <h1 className="eductaion-title">Health</h1>
                             <div className="d-flex">
-                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button></Link>
+                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BI SERVICE</button></Link>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">CHALLENGE</div>
@@ -110,7 +110,7 @@ function CaseStudies() {
                             </div>
                             <div className="case-content">
                                 <div className="case-title">SOLUTION</div>
-                                <div className="case-desc">When we met with Sandra, it didn’t take long to see just how time consuming this process had become. We used the BI Service subscription features and created the “hasslebot”, the hassle you have when you’re not having to hassle.</div>
+                                <div className="case-desc">When we met with Sandra, it didn’t take long to see just how time consuming this process had become. We used the <Link className='case-studies-link' to='/bi-service-ssrs-reports-sharepoint'>BI Service</Link> subscription features and created the “hasslebot”, the hassle you have when you’re not having to hassle.</div>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">RESULT</div>
@@ -142,7 +142,7 @@ function CaseStudies() {
                             </div>
                             <div className="case-content">
                                 <div className="case-title">SOLUTION</div>
-                                <div className="case-desc">We created Sam a single status report for each project that was updated to the minute, so he could focus on problem areas. Using BI Service and Project Sync Service, we created a PoP report (Project on a Page). His Issue, Risk and Change Request information became available immediately and Project Schedule information a few minutes after publishing a project.</div>
+                                <div className="case-desc">We created Sam a single status report for each project that was updated to the minute, so he could focus on problem areas. Using <Link className='case-studies-link' to='/bi-service-ssrs-reports-sharepoint'>BI Service</Link> and <Link className='case-studies-link' to='/project-sync-project-online'>Project Sync Service</Link>, we created a PoP report (Project on a Page). His Issue, Risk and Change Request information became available immediately and Project Schedule information a few minutes after publishing a project.</div>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">RESULT</div>
@@ -159,7 +159,7 @@ function CaseStudies() {
                         <div className="p-0">
                             <h1 className="eductaion-title">Government</h1>
                             <div className="d-flex">
-                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button></Link>
+                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BI SERVICE</button></Link>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">CHALLENGE</div>
@@ -167,7 +167,7 @@ function CaseStudies() {
                             </div>
                             <div className="case-content">
                                 <div className="case-title">SOLUTION</div>
-                                <div className="case-desc">Working closely with the client to understand the essential reports driving their business, we began to build a BI Service solution that would ensure business continuity, provide improved efficiency and provide limited development time.</div>
+                                <div className="case-desc">Working closely with the client to understand the essential reports driving their business, we began to build a <Link className='case-studies-link' to='/bi-service-ssrs-reports-sharepoint'>BI Service</Link> solution that would ensure business continuity, provide improved efficiency and provide limited development time.</div>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">RESULT</div>
@@ -190,7 +190,7 @@ function CaseStudies() {
                         <div className="p-0">
                             <h1 className="eductaion-title">Finance</h1>
                             <div className="d-flex">
-                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button></Link>
+                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BI SERVICE</button></Link>
                                 <Link to="/list-sync-sql-sharepoint-online"><button className="cases-btn btn">LIST SYNC</button></Link>
                             </div>
                             <div className="case-content">
@@ -199,7 +199,7 @@ function CaseStudies() {
                             </div>
                             <div className="case-content">
                                 <div className="case-title">SOLUTION</div>
-                                <div className="case-desc">After close consultation with the client we implemented ThorApps Online Services, making use of the BI Service we were able to create an automated multi-page report with charts detailing performance against target.</div>
+                                <div className="case-desc">Michael’s issue is not uncommon and was the perfect candidate for our support ticketing system, which uses a SQL database to store the issue and customer contact data, then generate reports. So we created an SSRS report for <Link className='case-studies-link' to='/bi-service-ssrs-reports-sharepoint'>BI Service</Link> and a data driven subscription.</div>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">RESULT</div>
@@ -216,7 +216,7 @@ function CaseStudies() {
                         <div className="p-0">
                             <h1 className="eductaion-title">Mining</h1>
                             <div className="d-flex">
-                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BY SERVICE</button></Link>
+                                <Link to="/bi-service-ssrs-reports-sharepoint"><button className="cases-btn btn" style={{ marginLeft: '0px' }}>BI SERVICE</button></Link>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">CHALLENGE</div>
@@ -224,11 +224,11 @@ function CaseStudies() {
                             </div>
                             <div className="case-content">
                                 <div className="case-title">SOLUTION</div>
-                                <div className="case-desc">By employing BI Service by ThorApps the client was able to generate paginated reports via the free Visual Studio community edition. They were then more easily able to present reports as both a dashboard in SharePoint online and print the paginated reports (to PDF or Printer).</div>
+                                <div className="case-desc">By employing <Link className='case-studies-link' to='/bi-service-ssrs-reports-sharepoint'>BI Service</Link> by ThorApps the client was able to generate paginated reports via the free Visual Studio community edition. They were then more easily able to present reports as both a dashboard in SharePoint online and print the paginated reports (to PDF or Printer).</div>
                             </div>
                             <div className="case-content">
                                 <div className="case-title">RESULT</div>
-                                <div className="case-desc">No more battling with Power BI printouts! Using the BI Service app now means anyone can not only page through their report pages, but also export their report to PDF for printing.</div>
+                                <div className="case-desc">No more battling with Power BI printouts! Using the <Link className='case-studies-link' to='/bi-service-ssrs-reports-sharepoint'>BI Service</Link> app now means anyone can not only page through their report pages, but also export their report to PDF for printing.</div>
                             </div>
                         </div>
                     </div>
